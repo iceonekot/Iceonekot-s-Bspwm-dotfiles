@@ -11,7 +11,7 @@ Terminal: Alacritty
 
 Editor: Neovim (https://github.com/nvim-lua/kickstart.nvim) and VS Code
 
-Dependencies to install for proper work (comes pre-installed with Arco Linux) - bspwm sxhkd polybar picom alacritty
+Dependencies to install for proper work (comes pre-installed with Arco Linux): bspwm sxhkd polybar picom alacritty
 
 Install it via your distro package manager
 
