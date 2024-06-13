@@ -9,7 +9,9 @@ OS: Arco Linux
 
 Terminal: Alacritty
 
-Editor: Neovim (https://github.com/nvim-lua/kickstart.nvim) and VS Code
+Editor: Neovim (https://github.com/nvim-lua/kickstart.nvim   or   https://nvchad.com/) and VS Code
+
+GTK Theme:Arc Dark
 
 Dependencies to install for proper work (comes pre-installed with Arco Linux): bspwm sxhkd polybar picom alacritty
 
