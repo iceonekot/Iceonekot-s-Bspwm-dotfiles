@@ -1,82 +1,30 @@
-#################################################################
-# KEYBOARD BINDINGS FOR ANY TWM
-#################################################################
-
-#################################################################
-# SUPER + FUNCTION KEYS
-#################################################################
-
 #Bookmarks
-Insert
+super + Insert
     ~/.config/Bookmark/bookmark_search.sh
-
-#Vlc
-super + F6
-    vlc --video-on-top
-
-#Virtualbox
-super + F7
-    virtualbox
 
 #Thunar
 super + e
     thunar
 
-#Todoist
-super + h
-	flatpak run com.todoist.Todoist
-
-#Obsidian
-super + b
-	obsidian
-
-#Spotify
+#Music
 super + m
-    spotify
-
-#Steam
-super + s
-	steam
+	alacritty -e cmus
 
 #VS Code
 super + c
 	code
 
-#Telegram
+#Calendar
 super + t
-	telegram-desktop
-
-#Discord
-super + d
-	discord
-
-#Rofi Fullscreen
-super + F11
-    rofi -theme-str 'window \{width: 100%;height: 100%;\}' -show drun
-
-#Rofi
-super + F12
-    rofi -show drun
-
-#################################################################
-# SUPER + ... KEYS
-#################################################################
+	alacritty -e calcurse
 
 #Browser
 super + w
     brave
 
-#Conky-toggle
-super + v
-    conky-toggle
-
 #archlinux-logout
 super + l
     archlinux-logout
-
-#powermenu
-super + shift + x
-    arcolinux-powermenu
 
 #alacritty
 super + x
@@ -86,21 +34,8 @@ super + x
 #super + Escape
     #xkill
 
-#################################################################
-# SUPER + SHIFT KEYS
-#################################################################
-
-#File-Manager
-super + shift + Return
-	thunar
-
-#Keyboard dependent
-#File-Manager
-#super + shift + KP_Enter
-#	thunar
-
 #dmenu
-super + shift + d
+super + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 #rofi
@@ -111,48 +46,17 @@ super + r
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-#################################################################
-# CONTROL + SHIFT KEYS
-#################################################################
-
-#Xcfe4-TaskManager
-ctrl + shift + Escape
-    xfce4-taskmanager
-
-
-#################################################################
-#     SCREENSHOTS
-#################################################################
-
-#Scrot
+#Screenshot
 Print
     flameshot gui
-
-#########################
-#        POLYBAR        #
-#########################
 
 #Hide polybar
 super + y
     polybar-msg cmd toggle
 
-#################################################################
-#################################################################
-##################   DESKTOP SPECIFIC    ########################
-#################################################################
-#################################################################
-
-#################################################################
-# CTRL + ALT KEYS
-#################################################################
-
 #Picom Toggle
 ctrl + alt + o
     ~/.config/bspwm/scripts/picom-toggle.sh
-
-#################################################################
-# SUPER + KEYS
-#################################################################
 
 #Toggle fullscreen of window
 super + f
@@ -166,9 +70,6 @@ super + p
 super + q
 	bspc node -c
 
-#################################################################
-# SUPER KEYS
-#################################################################
 #Focus selected desktop
 super + space
 	bspc desktop -f '^{1-9}'
@@ -185,26 +86,13 @@ super + Tab
 super + BackSpace
 		bspc monitor -f next
 
-#################################################################
-# SUPER + ALT KEYS
-#################################################################
-
 # Move floating window
 super + alt + {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
 
-#################################################################
-# SUPER + CONTROL KEYS
-#################################################################
-
 # Cancel preselection
 super + ctrl + space
 	bspc node --presel-dir cancel
-
-#################################################################
-# SUPER + SHIFT KEYS
-#################################################################
-
 
 #Reload bspwm
 super + shift + r
@@ -242,10 +130,6 @@ super + shift + Up
 super + shift + Down
 		bspc node -m next --follow
 
-#################################################################
-# SUPER + CONTROL KEYS
-#################################################################
-
 # Focus/swap windows by direction
 super + ctrl + {Left,Down,Up,Right}
 	bspc node --{focus} {west,south,north,east}
@@ -266,34 +150,13 @@ super + ctrl + {u,i,o,p}
 super + ctrl + {_,shift +}{1-9}
 	bspc node {_,@/} --presel-ratio 0.{1-9}
 
-
-#################################################################
-# ALT KEYS
-#################################################################
-
 #Focus selected desktop
 alt + Tab
 	bspc desktop -f '^{1-9,10}'
 
-	#Focus selected desktop
-alt + shift + Tab
-	bspc desktop -f '^{1-9,10}'
-
-#Rotate desktop
-alt + space
-	bspc node @/ --rotate {90,-90}
-
-#################################################################
-# ALT + SHIFT KEYS
-#################################################################
-
 # Expand tiled space
 alt + shift + {h,j,k,l}
 	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
-
-#################################################################
-# CTRL + ALT KEYS
-#################################################################
 
 # Focus next/previous window
 ctrl + alt + Left
@@ -310,12 +173,6 @@ ctrl +alt + Up
 # Focus Down window
 ctrl + alt + Down
 	bspc node --focus south
-
-#################################################################
-#################################################################
-##################   AZERTY/QWERTY/ ... KEYBOARD#################
-#################################################################
-#################################################################
 
 #Switch here between qwerty and azerty or make new one
 #Focus selected desktop FOR QWERTY KEYBOARDS
