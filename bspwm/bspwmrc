@@ -51,10 +51,6 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 #Fullscreen applications
 bspc rule -a inkscape state=fullscreen
-bspc rule -a Steam state=fullscreen
-bspc rule -a Vlc state=fullscreen
-bspc rule -a VirtualBox Manager state=fullscreen
-bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen
 
 #Floating applications
@@ -64,31 +60,8 @@ bspc rule -a Arcolinux-welcome-app.py state=floating
 bspc rule -a Arcolinux-calamares-tool.py state=floating
 bspc rule -a feh state=floating
 #bspc rule -a mpv state=floating sticky=on
-#bspc rule -a Font-manager state=floating
-bspc rule -a Galculator state=floating
-#bspc rule -a Gpick state=floating sticky=on
-#bspc rule -a Nitrogen state=floating
-bspc rule -a Oblogout state=floating
 #bspc rule -a Pavucontrol state=floating sticky=on
-#bspc rule -a Peek state=floating
 #bspc rule -a rofi state=floating sticky=on
-
-#open applications on specific workspaces
-#bspc rule -a brave desktop='^1' follow=on
-#bspc rule -a Steam desktop='^4'
-#bspc rule -a vlc desktop='^6'  follow=on
-#bspc rule -a mpv desktop='^6'  follow=on
-#bspc rule -a Todoist desktop='^5'  follow=on
-#bspc rule -a Thunar desktop='^8' follow=on
-#bspc rule -a discord desktop='^3' follow=on
-#bspc rule -a Spotify desktop='^7' follow=on
-#bspc rule -a Code desktop='^2' follow=on
-#bspc rule -a obsidian desktop='^6' follow=on
-
-#Spotify fix  --move desktop 10
-#sleep 1
-#wmctrl -r Spotify -t 10
-#exit
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
