@@ -38,15 +38,3 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #copyq &
-
-#run volumeicon &
-#run variety &
-#nitrogen --restore &
-#run caffeine &
-#run firefox &
-#run thunar &
-#run discord &
-#run spotify &
-# blueberry-tray &
-# run nm-applet &
-# run pamac-tray &
