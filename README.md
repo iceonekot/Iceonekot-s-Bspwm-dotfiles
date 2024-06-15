@@ -18,7 +18,7 @@ Dependencies to install for proper work (comes pre-installed with Arco Linux): b
 Install it via your distro package manager
 
 # Base programs I'm using
-mpv calcurse cmus flameshot thunar Vs code (or Vs Codium, it's better)
+mpv calcurse cmus flameshot thunar lf Vs code (or Vs Codium, it's better)
 
 # Rofi panel
 ![6](https://github.com/iceonekot/Svyavo-s-dotfiles/assets/172209243/ce8b5fbd-47a2-4dd2-8ceb-99445d932454)
