@@ -2,6 +2,10 @@
 super + Insert
     ~/.config/Bookmark/bookmark_search.sh
 
+#Bookmark this
+super + shift + b
+    ~/.config/Bookmark/bookmarkthis.sh
+
 #Thunar
 super + e
     thunar
@@ -36,7 +40,7 @@ super + x
 
 #dmenu
 super + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -fn 'JetBrainsMonoRegular:bold:pixelsize=23'
 
 #rofi
 super + r
