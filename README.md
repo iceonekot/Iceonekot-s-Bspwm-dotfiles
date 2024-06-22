@@ -18,7 +18,7 @@ Dependencies to install for proper work (comes pre-installed with Arco Linux): b
 Install it via your distro package manager
 
 # Base programs I'm using on every system
-mpv calcurse cmus neovim flameshot thunar thunderbird zoxide pass lf Vs code (or Vs Codium, it's better) starship (for shell, bash)
+mpv calcurse cmus neovim flameshot thunar thunderbird zoxide pass lf pywal setxkbmap Vs code (or Vs Codium, it's better) starship (for shell, bash)
 
 # Rofi panel
 ![6](https://github.com/iceonekot/Svyavo-s-dotfiles/assets/172209243/ce8b5fbd-47a2-4dd2-8ceb-99445d932454)
